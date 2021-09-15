@@ -2,7 +2,7 @@ import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/sty
 import {Typography} from '@material-ui/core'; 
 import NavBar from './components/NavBar'
 import './App.css';
-import Main from 'Main';
+// import Main from 'Main';
 //changes to imports 
 /*import SecurityIcon from '@material-ui/icons/Security';
 import EventNoteIcon from '@material-ui/icons/EventNote';
@@ -67,7 +67,6 @@ My name is Thamany Valbrune, and I am a junior at University of Massachusetts- B
 <hr/>
 </div>
 </ThemeProvider>
-<Main />
 
 </div>
 
