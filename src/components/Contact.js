@@ -1,13 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Home, Contact, Resume, Projects} from "./components";
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import {Typography} from '@material-ui/core'; 
 
 const theme = createMuiTheme({
   typography: {
     fontFamily: [
-      'Arial'
+      'Roboto'
     ],
     h4: {
       fontWeight: 600,
@@ -42,33 +40,24 @@ const styles = makeStyles({
     flexWrap: "wrap", 
   },
 })
-
-
-
-
-
-function App() {
-
-  const sty = styles(); 
-
+function Contact() {
   return (
-    <div className="App">
-      <ThemeProvider theme={theme}>
+    <ThemeProvider thene = {theme}>
+    <div className="contact">
+      <div class="container">
 
-      <Router>
-        <Navigation />
-        <Switch>
-          <Route path="/" exact component={() => <Home />} />
-          <Route path="/contact" exact component={() => <Contact />} />
-          <Route path="/resume" exact component={() => <Resume />} />
-          <Route path="/Projects" exact component={() => <Projects />} />
-
-
-        </Switch>
-      </Router>
-</ThemeProvider>
+            <h1>Contact</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+        
+      </div>
     </div>
+    </ThemeProvider>
   );
 }
 
-export default App;
+export default Contact;
