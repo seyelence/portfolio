@@ -46,6 +46,7 @@ function Home() {
     const classes = styles(); 
 
         return (
+          <section id = "index">
             <ThemeProvider theme={theme}>
 
           <div className="App">
@@ -58,6 +59,7 @@ function Home() {
       </div>  
       </div>
       </ThemeProvider>
+      </section>
 
         );
         

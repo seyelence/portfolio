@@ -1,9 +1,7 @@
 hr {
   background-color: pink;
 }
-html {
-  scroll-behavior: smooth ;
-}
+
 
 h1, h4, h5 {
   font-family: 'Courier New', Courier, monospace;
@@ -12,4 +10,6 @@ li {
   
   display: inline-table;
 }
+
+
 

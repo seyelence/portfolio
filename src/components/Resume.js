@@ -49,6 +49,7 @@ function Resume() {
     const sty = styles(); 
 
     return (
+      <section id = "resume">
         <ThemeProvider theme = {theme}>
 
         <div className={sty.littleSpace}> 
@@ -76,6 +77,8 @@ function Resume() {
 
         </div>
         </ThemeProvider>
-    )
+        </section>
+        
+        )
 }
 export default Resume;
