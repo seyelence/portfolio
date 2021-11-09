@@ -4,6 +4,7 @@ import { withRouter } from 'react-router';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import './index.css';
+import { Brightness1Outlined } from "@material-ui/icons";
 
 const theme = createMuiTheme({
   typography: {
@@ -30,7 +31,6 @@ const styles = makeStyles({
   },
   bigSpace: {
     marginTop: "10rem",
-    
   },
   littleSpace:{
     marginTop: "2.5rem",
@@ -64,8 +64,9 @@ function App() {
       
       <Switch>
       <ScrollToTop>
-      <Route exact path="/" component={withRouter(Home)} />
+      <Route exact path="/" component={withRouter(Home) } />
       <Route exact path="/Resume" component={withRouter(Resume)} />
+
       <Route exact path="/Projects" component={withRouter(Projects)} />
       <Route exact path="/Contact" component={withRouter(Contact)} />
       </ScrollToTop>
