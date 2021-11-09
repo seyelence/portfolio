@@ -7,9 +7,12 @@ h1, h4, h5 {
   font-family: 'Courier New', Courier, monospace;
 }
 li {
-  
   display: inline-table;
 }
 
+contactList {
+  display: inline-table;
+  color: aqua;
+}
 
 

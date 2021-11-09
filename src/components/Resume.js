@@ -51,8 +51,8 @@ function Resume() {
     return (
       <section id = "resume">
         <ThemeProvider theme = {theme}>
+        <h1 className={sty.wrapper}> Resume </h1>
 
-        <div className={sty.littleSpace}> 
           <h4 className='new-line'>SUMMARY </h4>
                 Currently enrolled at the University of Massachusetts (Boston) for a bachelor’s degree in Computer Science B.S. I am a fast learner with excellent and fast communication skills.
 
@@ -74,9 +74,12 @@ function Resume() {
                 Community service group for teenagers in Everett that advocates against substance abuse. Participated in several projects such as the Expungement Act.
                 Helping Hands at Work (HHW)				September 2015 - September 2018
                 Community service group across several cities in my area that educated teenagers while helping our communities in some way such as teaching younger students or fundraising for poor families during the winter.
+                <hr/>
+                
 
-        </div>
-        </ThemeProvider>
+         <br/>
+         </ThemeProvider>
+
         </section>
         
         )

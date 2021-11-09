@@ -40,23 +40,32 @@ const styles = makeStyles({
   },
 })
 function Contact() {
+  const classes = styles(); 
+
   return (
     <section id = "contact">
-    <ThemeProvider thene = {theme}>
-    <div className="contact">
+    <ThemeProvider theme = {theme}>
+    <div className="classes.wrapper">
       <div class="container">
 
-            <h1>Contact</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-        
+            <h1 className={classes.bigSpace}>Contact</h1>
+            <ul>
+            <li className={classes.grid}> Email: thamanyvalbrune@gmail.com </li>
+            <li className={classes.grid}> Phone: 617-792-1534 </li>
+            <li className={classes.grid}> Address: 2 Prescott Terrace, Everett MA </li>
+            </ul>
+            <br/>
+
+            <br/>
+
+            <hr/>
       </div>
     </div>
+    
+
     </ThemeProvider>
+  
+
     </section>
   );
 }
