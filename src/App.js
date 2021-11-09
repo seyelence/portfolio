@@ -1,10 +1,9 @@
 import React from "react";
-import { Navigation, Home, Contact, Resume, Projects} from "./components";
+import { Navigation, Home, Contact, Resume, Projects, ScrollToTop} from "./components";
 import { withRouter } from 'react-router';
-import { BrowserRouter, HashRouter, Router, Link, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import './index.css';
-
 
 const theme = createMuiTheme({
   typography: {
@@ -47,8 +46,6 @@ const styles = makeStyles({
 
 
 
-
-
 function App() {
 
 
@@ -57,7 +54,7 @@ function App() {
   return (
     <div className="App">
     <ThemeProvider theme={theme}>
-      <HashRouter>
+      <BrowserRouter>
       
       <Navigation/>
       <Home/>
@@ -66,12 +63,15 @@ function App() {
       <Contact/>
       
       <Switch>
+      <ScrollToTop>
       <Route exact path="/" component={withRouter(Home)} />
       <Route exact path="/Resume" component={withRouter(Resume)} />
       <Route exact path="/Projects" component={withRouter(Projects)} />
       <Route exact path="/Contact" component={withRouter(Contact)} />
+      </ScrollToTop>
       </Switch>
-      </HashRouter>
+
+      </BrowserRouter>
 </ThemeProvider>
     </div>
   );
