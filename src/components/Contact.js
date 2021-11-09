@@ -1,6 +1,5 @@
 import React from "react";
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
-import {Typography} from '@material-ui/core'; 
 
 const theme = createMuiTheme({
   typography: {
@@ -42,6 +41,7 @@ const styles = makeStyles({
 })
 function Contact() {
   return (
+    <section id = "contact">
     <ThemeProvider thene = {theme}>
     <div className="contact">
       <div class="container">
@@ -57,6 +57,7 @@ function Contact() {
       </div>
     </div>
     </ThemeProvider>
+    </section>
   );
 }
 

@@ -1,8 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Navigation, Home, Contact, Resume, Projects} from "./components";
+import { withRouter } from 'react-router';
+import { BrowserRouter, HashRouter, Router, Link, Route, Switch, Redirect } from "react-router-dom";
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
-import {Typography} from '@material-ui/core'; 
+import './index.css';
+
 
 const theme = createMuiTheme({
   typography: {
@@ -49,23 +51,27 @@ const styles = makeStyles({
 
 function App() {
 
+
   const sty = styles(); 
 
   return (
     <div className="App">
-      <ThemeProvider theme={theme}>
-
-      <Router>
-        <Navigation />
-        <Switch>
-          <Route path="/" exact component={() => <Home />} />
-          <Route path="/contact" exact component={() => <Contact />} />
-          <Route path="/resume" exact component={() => <Resume />} />
-          <Route path="/Projects" exact component={() => <Projects />} />
-
-
-        </Switch>
-      </Router>
+    <ThemeProvider theme={theme}>
+      <HashRouter>
+      
+      <Navigation/>
+      <Home/>
+      <Resume/>
+      <Projects/>
+      <Contact/>
+      
+      <Switch>
+      <Route exact path="/" component={withRouter(Home)} />
+      <Route exact path="/Resume" component={withRouter(Resume)} />
+      <Route exact path="/Projects" component={withRouter(Projects)} />
+      <Route exact path="/Contact" component={withRouter(Contact)} />
+      </Switch>
+      </HashRouter>
 </ThemeProvider>
     </div>
   );
