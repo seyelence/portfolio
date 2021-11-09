@@ -29,8 +29,7 @@ const styles = makeStyles({
 })
 
 function Navigation(props) {
-
-    const classes = styles();
+    
     useEffect(() => {
       let url = window.location.href.split("/");
       let target = url[url.length - 1].toLowerCase();
@@ -38,38 +37,43 @@ function Navigation(props) {
       element && element.scrollIntoView({ behavior: "smooth", block: "start" });
     }, []);
     
-  
-  
+    const classes = styles();
+
     return (
       <div id = "navbar">
-      <div data-sticky-states-inner>
-
       <Toolbar position="sticky" className={classes.bar}> 
+
+
 
       <Link to="/" onClick={() => {
       let index = document.getElementById("index");
       index && index.scrollIntoView({ behavior: "smooth", block: "start" });
     }}
-  >
-  <Typography variant="h6" className={classes.menuItem}> Home </Typography>
-  </Link>
+    >
+      <Typography variant="h6" className={classes.menuItem}> Home </Typography>
+      </Link>
 
 
-    <Link to="/resume" onClick={() => {
+
+
+     <Link to="/resume" onClick={() => {
       let resume = document.getElementById("resume");
       resume && resume.scrollIntoView({ behavior: "smooth", block: "start" });
     }}
-  >
-  <Typography variant="h6" className={classes.menuItem}> Resume </Typography>
-  </Link>
+    >
+      <Typography variant="h6" className={classes.menuItem}> Resume </Typography>
+      </Link>
 
-<Link to="/projects" onClick={() => {
+
+      <Link to="/projects" onClick={() => {
           let projects = document.getElementById("projects");
           projects && projects.scrollIntoView({ behavior: "smooth", block: "start" });
         }}
       >
       <Typography variant="h6" className={classes.menuItem}> Projects  </Typography>
       </Link>
+
+
 
       <Link to="/contact" onClick={() => {
         let contact = document.getElementById("contact");
@@ -79,8 +83,9 @@ function Navigation(props) {
     <Typography variant="h6" className={classes.menuItem}> Contact  </Typography>
     </Link>
 
+
+    
     </Toolbar>
-    </div>
     </div>
   );
 }
