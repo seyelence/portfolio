@@ -59,7 +59,7 @@ function Projects() {
           </div>
           <br/>
           <br/>
-          <hr/>
+ 
         </div>
       </div>
       </section>

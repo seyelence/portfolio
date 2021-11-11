@@ -1,11 +1,7 @@
-hr {
-  background-color: pink;
-}
-
-
 h1, h4, h5 {
   font-family: 'Courier New', Courier, monospace;
 }
+
 li {
   display: inline-table;
 }
@@ -13,5 +9,26 @@ li {
 contactList {
   display: inline-table;
   color: aqua;
+}
+
+.about_desc {
+  font-size: 3em;
+  font-family:Roboto;
+  width: "65%";
+  margin: "auto";
+  text-align: "center";
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#app>div {
+  height: 100%; /* remove this line to see div.app is no more 100% height */
+  margin: 20%;
 }
 
