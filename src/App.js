@@ -4,7 +4,7 @@ import { withRouter } from 'react-router';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import './index.css';
-import { Brightness1Outlined } from "@material-ui/icons";
+import './App.css';
 
 const theme = createMuiTheme({
   typography: {
