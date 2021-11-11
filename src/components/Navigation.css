@@ -1,0 +1,26 @@
+.csslink {
+  color:" black";
+  cursor: "pointer";
+  float: left;
+  position: relative;
+  padding: .5em .5em;
+  overflow: hidden;
+}
+
+
+.csslink::after {
+  background-color: pink;
+  content: "";
+  width: 0;
+  height: .1em;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+
+}
+.csslink:hover::after {
+  width: 80%;
+}
+
+h6:hover{
+  color: pink;
+}

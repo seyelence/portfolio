@@ -6,7 +6,6 @@ import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/sty
 import './index.css';
 import './App.css';
 
-
 const theme = createMuiTheme({
   typography: {
     fontFamily: [
@@ -45,8 +44,6 @@ const styles = makeStyles({
   },
 })
 
-
-
 function App() {
 
 
@@ -56,25 +53,21 @@ function App() {
     <div className="App">
     <ThemeProvider theme={theme}>
       <BrowserRouter>
-      
       <Navigation/>
       <Home/>
       <Resume/>
       <Projects/>
       <Contact/>
-      
       <Switch>
       <ScrollToTop>
       <Route exact path="/" component={withRouter(Home) } />
       <Route exact path="/Resume" component={withRouter(Resume)} />
-
       <Route exact path="/Projects" component={withRouter(Projects)} />
       <Route exact path="/Contact" component={withRouter(Contact)} />
       </ScrollToTop>
       </Switch>
-
       </BrowserRouter>
-</ThemeProvider>
+  </ThemeProvider>
     </div>
   );
 }

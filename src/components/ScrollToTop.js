@@ -1,10 +1,25 @@
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp'
+import './ScrollToTop.css'
 
-export default function ScrollToTop() {
-  const { pathname } = useLocation();
+const ScrollToTop = () => {
+  const [isVisible, setIsVisible] = useState(false)
+
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return null;
+    const toggleVisibility = () =>
+      window.pageYOffset > 300 ? setIsVisible(true) : setIsVisible(false)
+
+    window.addEventListener('scroll', toggleVisibility)
+    return () => window.removeEventListener('scroll', toggleVisibility)
+  }, [])
+
+  return isVisible ? (
+    <div className='scroll-top'>
+      <a href='#top'>
+        <KeyboardArrowUpIcon className='material-icons alter'/>
+      </a>
+    </div>
+  ) : null
 }
+
+export default ScrollToTop
