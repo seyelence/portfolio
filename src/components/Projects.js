@@ -1,5 +1,6 @@
 import React from "react";
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
+import { Link } from "react-router-dom";
 
 const theme = createMuiTheme({
   typography: {
@@ -49,12 +50,11 @@ function Projects() {
           <div class="classes.wrapper">
             <h1 className={classes.bigSpace}> Projects </h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+       Checkout some of my projects below! Will update as I gain more experience and create new things.
             </p>
-            
+            <h3> Smart Game AI </h3>
+            <a href="https://github.com/seyelence/cs310/tree/main/pa3" rel="noreferrer">
+            Check it out on GitHub </a>
 
           </div>
           <br/>
