@@ -1,0 +1,70 @@
+.skill {
+    display: inline;
+    margin-left: 50em;
+}
+
+._2634o {
+    margin: 0;
+    font-size: 1.1em;
+    text-transform: lowercase;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #000000;
+}
+
+.x1MBX {
+    margin: 0.2rem 4px;
+    overflow: hidden;
+    border-radius: 3px;
+    text-align: center;
+	opacity: 0.3;
+}
+
+.R6-Wf {
+    display: box;
+    width: 20%;
+    padding: 0 3px 0 3px;
+    overflow-y: hidden;
+    padding-right: 0.4rem;
+}
+
+  
+        .R6-Wf div:nth-child(7n-6) {
+					background-color:pink;
+        }
+
+        .R6-Wf div:nth-child(7n-5) {
+					background-color:pink;
+        }
+
+        .R6-Wf div:nth-child(7n-4) {
+					background-color: pink;
+        }
+
+        .R6-Wf div:nth-child(7n-3) {
+					background-color:pink;
+        }
+
+        .R6-Wf div:nth-child(7n-2) {
+					background-color:pink;
+        }
+
+        .R6-Wf div:nth-child(7n-1) {
+					background-color:pink;
+        }
+
+.R6-Wf div:nth-child(7n) {
+	background-color:pink;
+    }
+
+
+h2 {
+    font-family: "Monsterrat";
+}
+
+.subtitle{
+    margin-top: 9%;
+    text-align: center;
+    font-size: 3em;
+}

@@ -1,15 +1,15 @@
 import React from "react";
-import { Navigation, Home, Contact, Resume, Projects, ScrollToTop} from "./components";
+import { Navigation, Home, Contact, Resume, Projects, ScrollToTop, Skills} from "./components";
 import { withRouter } from 'react-router';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
+import { createTheme , ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import './index.css';
 import './App.css';
 
-const theme = createMuiTheme({
+const theme = createTheme ({
   typography: {
     fontFamily: [
-      'Arial'
+      'Montserrat'
     ],
     h4: {
       fontWeight: 600,
@@ -55,13 +55,13 @@ function App() {
       <BrowserRouter>
       <Navigation/>
       <Home/>
-      <Resume/>
       <Projects/>
+      <Skills/>
       <Contact/>
       <Switch>
       <ScrollToTop>
       <Route exact path="/" component={withRouter(Home) } />
-      <Route exact path="/Resume" component={withRouter(Resume)} />
+      <Route exact path="/Resume" component={withRouter(Skills)} />
       <Route exact path="/Projects" component={withRouter(Projects)} />
       <Route exact path="/Contact" component={withRouter(Contact)} />
       </ScrollToTop>

@@ -1,8 +1,11 @@
-export { default as Navigation } from "./Navigation";
-export { default as Home } from "./Home";
-export { default as Resume } from "./Resume";
-export { default as Contact } from "./Contact";
-export { default as Projects } from "./Projects";
-export { default as ScrollToTop } from "./ScrollToTop";
+export { default as Navigation } from "./Navigation/Navigation";
+export { default as Home } from "./Home/Home";
+export { default as Resume } from "./Resume/Resume";
+export { default as Contact } from "./Contact/Contact";
+export { default as Projects } from "./Projects/Projects";
+export { default as ScrollToTop } from "./ScrollFix/ScrollToTop";
+export { default as Skills } from "./Skills/Skills";
+
+
 
 
