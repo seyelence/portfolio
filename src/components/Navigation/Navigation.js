@@ -43,7 +43,7 @@ function Navigation(props) {
       </div>
 
       <div className="csslink"> <Link to="/skill" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => {
-      let resume = document.getElementById("resume");
+      let resume = document.getElementById("skilllss");
       resume && resume.scrollIntoView({ behavior: "smooth", block: "start" });
         }}>
       <Typography variant="h6"> skills </Typography>

@@ -2,6 +2,7 @@ import './Skills.css'
 
   const Skills = () => {
       return (
+          <section id="skilllss">
 <div class="skill">
 <h1 className="subtitle">SKILLS</h1>
                     <div class="_2Ru_P">
@@ -31,6 +32,7 @@ import './Skills.css'
 
                     </div>
                 </div>
+                </section>
       )
   }
                 
