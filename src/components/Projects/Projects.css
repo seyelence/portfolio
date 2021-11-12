@@ -14,17 +14,15 @@
 .card {
     border: 1px solid #eee;
     box-shadow: 0 2px 2px #ccc;
-    width: 24em;
-    height: 20em;
-    padding : 2em;
-    position:center; 
-    margin-left:24em;
+    width:30%;
+    padding : 4em;
+position: relative; 
+   margin-left:15%;
 }
 
 proj.desc {
     margin-top: 1em;
     padding: 2em;
-    margin: 0 auto;
     text-align: center;
     box-shadow: var(--shadow);
     transition: transform 0.2s linear;
@@ -43,4 +41,22 @@ a:hover {
     text-decoration: none;
     color:rgb(193, 211, 199);
 
+}
+
+@media only screen and (max-width: 800px) {
+    proj.desc{
+        font-size: 1em;
+    }
+    h1{
+        font-size:1.4em;
+        
+    }
+    .card {
+        border: 1px solid #eee;
+        box-shadow: 0 2px 2px #ccc;
+        width:50%;
+        padding : 1em;
+    position: relative; 
+       margin-left:15%;
+    }
 }

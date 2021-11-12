@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation, Home, Contact, Resume, Projects, ScrollToTop, Skills} from "./components";
+import { Navigation, Home, Contact, Projects, ScrollToTop, Skills} from "./components";
 import { withRouter } from 'react-router';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { createTheme , ThemeProvider, makeStyles } from '@material-ui/core/styles';
@@ -45,30 +45,27 @@ const styles = makeStyles({
 })
 
 function App() {
-
-
   const sty = styles(); 
-
   return (
     <div className="App">
     <ThemeProvider theme={theme}>
       <BrowserRouter>
-      <Navigation/>
-      <Home/>
-      <Projects/>
-      <Skills/>
-      <Contact/>
-      <Switch>
-      <ScrollToTop>
-      <Route exact path="/" component={withRouter(Home) } />
-      <Route exact path="/Resume" component={withRouter(Skills)} />
-      <Route exact path="/Projects" component={withRouter(Projects)} />
-      <Route exact path="/Contact" component={withRouter(Contact)} />
-      </ScrollToTop>
-      </Switch>
+        <Navigation/>
+        <Home/>
+        <Projects/>
+        <Skills/>
+        <Contact/>
+        <Switch>
+          <ScrollToTop>
+            <Route exact path="/" component={withRouter(Home) } />
+            <Route exact path="/Resume" component={withRouter(Skills)} />
+            <Route exact path="/Projects" component={withRouter(Projects)} />
+            <Route exact path="/Contact" component={withRouter(Contact)} />
+          </ScrollToTop>
+        </Switch>
       </BrowserRouter>
   </ThemeProvider>
-    </div>
+  </div>
   );
 }
 

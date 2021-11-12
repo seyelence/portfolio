@@ -7,7 +7,6 @@
   overflow: hidden;
 }
 
-
 .csslink::after {
   background-color: rgb(251, 226, 230);
   content: "";
@@ -23,4 +22,59 @@
 
 h6:hover{
   color:rgb(193, 211, 199);
+}
+
+.navbar {
+  background-color: #FFFCFC;
+  margin-right: -25% !important;
+  position: relative;
+}
+
+.navbar-nav {
+  float: left !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(193, 211, 199' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+  margin-left: 26% !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar-light .navbar-toggler {
+    margin-left: 26% !important;
+  }
+  .navbar {
+    background-color: #FFFCFC;
+    margin-right: -25% !important;
+    position:relative;
+  }
+
+  .navbar-nav {
+    float: left !important;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(193, 211, 199' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  .navbar-light .navbar-toggler {
+    margin-left: 35% !important;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+      outline: none;
+      box-shadow: none;
+  }
 }
