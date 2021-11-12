@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import {Toolbar, Typography} from '@material-ui/core'
 import './Navigation.css'
 import {makeStyles} from '@material-ui/core/styles';
-
+import { Container, Navbar, Nav } from "react-bootstrap";
 
 const styles = makeStyles({
     bar:{
@@ -29,46 +29,53 @@ function Navigation(props) {
     }, []);
     
     const classes = styles();
+   
     return (
       
-      <div id = "navbar">
       <Toolbar position="sticky" className={classes.bar}> 
+        <Navbar collapseOnSelect fixed ='top' expand ='lg' variant='light'>  
+          <Container>
+            <Navbar.Toggle aria-controls="responsibe-navbar-nav"/>
+              <Navbar.Collapse id ="responsibe-navbar-nav">
+                <Nav className="ml-auto"> 
+               
+                <div className="csslink"> 
+                <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'} }onClick={() => {
+                  let index = document.getElementById("index");
+                  index && index.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }} >
+                  <Typography variant="h6"> home </Typography>
+                </Link> 
+                </div>
 
-      <div className="csslink"> <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'} }onClick={() => {
-      let index = document.getElementById("index");
-      index && index.scrollIntoView({ behavior: "smooth", block: "start" });
-        }} >
-      <Typography variant="h6"> home </Typography>
-      </Link>
-      </div>
+                <div className="csslink"> <Link to="/skill" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => {
+                  let resume = document.getElementById("skilllss");
+                  resume && resume.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }}>
+                  <Typography variant="h6"> skills </Typography>
+                </Link>
+                </div>
 
-      <div className="csslink"> <Link to="/skill" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => {
-      let resume = document.getElementById("skilllss");
-      resume && resume.scrollIntoView({ behavior: "smooth", block: "start" });
-        }}>
-      <Typography variant="h6"> skills </Typography>
-      </Link>
-      </div>
+                <div className="csslink"> <Link to="/projects" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => {
+                  let projects = document.getElementById("projects");
+                  projects && projects.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }}>
+                  <Typography variant="h6"> projects  </Typography>
+                </Link>
+                </div> 
 
-      <div className="csslink"> <Link to="/projects" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => {
-          let projects = document.getElementById("projects");
-          projects && projects.scrollIntoView({ behavior: "smooth", block: "start" });
-        }}>
-        <Typography variant="h6"> projects  </Typography>
-        </Link>
-      </div>
-
-      <div className="csslink"> <Link to="/contact" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => {
-        let contact = document.getElementById("contact");
-        contact && contact.scrollIntoView({ behavior: "smooth", block: "start" });
-        }}>
-        <Typography variant="h6"> contact </Typography>
-        </Link>
-      </div>
-
-    </Toolbar>
-    </div>
-
+                <div className="csslink"> <Link to="/contact" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => {
+                  let contact = document.getElementById("contact");
+                  contact && contact.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }}>
+                <Typography variant="h6"> contact </Typography>
+              </Link>
+              </div>       
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </Toolbar>
   );
 }
 

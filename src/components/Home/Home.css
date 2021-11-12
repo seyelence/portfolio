@@ -39,11 +39,10 @@
   }
   
 .btn {
-  padding: .5%;
-  display: flexbox;
+  padding: 1%;
   cursor: pointer;
-  font-size: .8vw;
+  font-size: 120%;
   text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
-  margin-right:2em;
+  margin-right:1%;
 }
