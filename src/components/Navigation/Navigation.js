@@ -1,9 +1,8 @@
 import React , {useEffect} from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import {Toolbar, Typography} from '@material-ui/core'
 import './Navigation.css'
-import {createMuiTheme, makeStyles } from '@material-ui/core/styles';
-import { pink } from "@material-ui/core/colors";
+import {makeStyles} from '@material-ui/core/styles';
 
 
 const styles = makeStyles({
@@ -17,16 +16,7 @@ const styles = makeStyles({
         position: '-webkit-sticky',
         position: 'sticky',
         top: 0
-    },/*
-    menuItem: {
-        fontFamily: 'Courier New',
-        color:" black",
-        cursor: "pointer", 
-        flexGrow: 1,
-        "&:hover": {
-          color:"ff4081",
-        },
-    },*/
+    },
 })
 
 function Navigation(props) {
@@ -44,21 +34,19 @@ function Navigation(props) {
       <div id = "navbar">
       <Toolbar position="sticky" className={classes.bar}> 
 
-   
       <div className="csslink"> <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'} }onClick={() => {
       let index = document.getElementById("index");
       index && index.scrollIntoView({ behavior: "smooth", block: "start" });
-    }} >
-      <Typography variant="h6" className={classes.menuItem} > home </Typography>
+        }} >
+      <Typography variant="h6"> home </Typography>
       </Link>
       </div>
 
-
-      <div className="csslink"> <Link to="/resume" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => {
+      <div className="csslink"> <Link to="/skill" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => {
       let resume = document.getElementById("resume");
       resume && resume.scrollIntoView({ behavior: "smooth", block: "start" });
-    }}>
-      <Typography variant="h6" className={classes.menuItem}> resume </Typography>
+        }}>
+      <Typography variant="h6"> skills </Typography>
       </Link>
       </div>
 
@@ -66,20 +54,17 @@ function Navigation(props) {
           let projects = document.getElementById("projects");
           projects && projects.scrollIntoView({ behavior: "smooth", block: "start" });
         }}>
-      <Typography variant="h6" className={classes.menuItem}> projects  </Typography>
-      </Link>
+        <Typography variant="h6"> projects  </Typography>
+        </Link>
       </div>
-
 
       <div className="csslink"> <Link to="/contact" style={{ color: 'inherit', textDecoration: 'inherit'}} onClick={() => {
         let contact = document.getElementById("contact");
         contact && contact.scrollIntoView({ behavior: "smooth", block: "start" });
-      }}
-    >
-    <Typography variant="h6" className={classes.menuItem}> contact  </Typography>
-    </Link>
-    </div>
-
+        }}>
+        <Typography variant="h6"> contact </Typography>
+        </Link>
+      </div>
 
     </Toolbar>
     </div>

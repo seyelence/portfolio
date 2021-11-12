@@ -9,7 +9,7 @@
 
 
 .csslink::after {
-  background-color: pink;
+  background-color: rgb(251, 226, 230);
   content: "";
   width: 0;
   height: .1em;
@@ -22,5 +22,5 @@
 }
 
 h6:hover{
-  color: pink;
+  color:rgb(193, 211, 199);
 }

@@ -1,7 +1,7 @@
-.title{
+.subtitle{
     margin-top: 9%;
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
 }
 
 .desc {
@@ -17,8 +17,8 @@
     width: 24em;
     height: 20em;
     padding : 2em;
-    margin: 10em;
-    float: left;
+    position:center; 
+    margin-left:24em;
 }
 
 proj.desc {
@@ -28,8 +28,19 @@ proj.desc {
     text-align: center;
     box-shadow: var(--shadow);
     transition: transform 0.2s linear;
-  }
+}
 
-  .wrapper {
-    display: flex;
-  }
+.wrapper {
+display: flex;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    text-decoration: none;
+    color:rgb(193, 211, 199);
+
+}
