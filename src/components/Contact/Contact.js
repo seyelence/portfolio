@@ -13,9 +13,11 @@ const Contact = () => {
     <h1 className="subtitle"> CONTACT </h1>
     <br/>
     <a href={`mailto:${contact.email}`}>
+      <div className = "fixButton"> 
         <span type='button' className='btn btn-border'>
           My Email
         </span>
+        </div>
       </a>
     </section>
   )
