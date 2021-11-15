@@ -26,4 +26,19 @@
 btn-border:hover, .btn-border:focus {
     color: rgb(20, 20, 20);
 }
-      
+
+.btn {
+    padding: 1%;
+    cursor: pointer;
+    font-size: 120%;
+    text-transform: lowercase;
+    transition: transform 0.2s ease-in-out;
+    top: 50%;
+    left: -3%;
+  }
+
+  .fixButton{
+      top: 50%;
+      margin-left: 2.5%;
+
+  }

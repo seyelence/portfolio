@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation, Home, Contact, Projects, ScrollToTop, Skills} from "./components";
+import { Navigation, Home, Contact, Projects, ScrollToTop, Skills, Footer} from "./components";
 import { withRouter } from 'react-router';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { createTheme , ThemeProvider, makeStyles } from '@material-ui/core/styles';
@@ -64,6 +64,7 @@ function App() {
           </ScrollToTop>
         </Switch>
       </BrowserRouter>
+      <Footer/>
   </ThemeProvider>
   </div>
   );

@@ -5,9 +5,10 @@
 }
 
 .desc {
-    width: 30%;
-    margin-left: 35%;
+  text-align: center;
+    width: 40%;
     font-size: 150%;
+    margin-left: 31%;
 }
 
 .icon {
@@ -24,14 +25,14 @@
   overflow: hidden;
   z-index: 1;
 }
-  
+
 .btn-border:hover, .btn-border:focus {
   color: rgb(0, 0, 0);
 }
 
 .btn-border:before {
   content: '';
-  position: absolute;
+  position: relative;
   background-color: rgb(255, 235, 238);
   right: 100%;
   z-index: -1;
@@ -44,5 +45,6 @@
   font-size: 120%;
   text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
-  margin-right:1%;
+  top: 50%;
+  left: -3%;
 }

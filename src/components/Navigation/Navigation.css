@@ -37,7 +37,6 @@ h6:hover{
 .navbar-nav {
   float: left !important;
   margin-right: 3%;
-  z-index: 9999 !important;  
 
 }
 
@@ -62,7 +61,7 @@ h6:hover{
   }
   .navbar {
     background-color: #FFFCFC;
-    margin-right: -25% !important;
+    margin-right:43% !important;
   }
 
   .navbar-nav {
