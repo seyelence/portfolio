@@ -15,7 +15,7 @@ const styles = makeStyles({
         background: 'white',
         position: '-webkit-sticky',
         position: 'sticky',
-        top: 0
+        top: 0,
     },
 })
 
@@ -32,7 +32,7 @@ function Navigation(props) {
    
     return (
       
-      <Toolbar position="sticky" className={classes.bar}> 
+      <Toolbar position="sticky" className={classes.bar}>  
         <Navbar collapseOnSelect fixed ='top' expand ='lg' variant='light'>  
           <Container>
             <Navbar.Toggle aria-controls="responsibe-navbar-nav"/>

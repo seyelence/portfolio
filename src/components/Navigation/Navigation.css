@@ -5,6 +5,7 @@
   position: relative;
   padding: .5em .5em;
   overflow: hidden;
+  
 }
 
 .csslink::after {
@@ -20,19 +21,24 @@
   width: 80%;
 }
 
-h6:hover {
+h6:hover{
   color:rgb(193, 211, 199);
 }
+.nav{
+  z-index: 9;
 
+}
 .navbar {
   background-color: #FFFCFC;
   margin-right: -25% !important;
-  position: relative;  
+  position: relative;
 }
 
 .navbar-nav {
   float: left !important;
   margin-right: 3%;
+  z-index: 9999 !important;  
+
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -57,7 +63,6 @@ h6:hover {
   .navbar {
     background-color: #FFFCFC;
     margin-right: -25% !important;
-    position:relative;
   }
 
   .navbar-nav {
