@@ -37,7 +37,7 @@ function Navigation(props) {
           <Container>
             <Navbar.Toggle aria-controls="responsibe-navbar-nav"/>
               <Navbar.Collapse id ="responsibe-navbar-nav">
-                <Nav className="ml-auto"> 
+                <Nav className="ml-auto"  > 
                
                 <div className="csslink"> 
                 <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'} }onClick={() => {
