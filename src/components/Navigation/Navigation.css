@@ -20,18 +20,19 @@
   width: 80%;
 }
 
-h6:hover{
+h6:hover {
   color:rgb(193, 211, 199);
 }
 
 .navbar {
   background-color: #FFFCFC;
   margin-right: -25% !important;
-  position: relative;
+  position: relative;  
 }
 
 .navbar-nav {
   float: left !important;
+  margin-right: 3%;
 }
 
 .navbar-light .navbar-toggler-icon {

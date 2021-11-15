@@ -18,6 +18,7 @@
     padding : 4em;
 position: relative; 
    margin-left:15%;
+   z-index: -1;
 }
 
 proj.desc {
@@ -52,7 +53,7 @@ a:hover {
         
     }
     .card {
-        border: 1px solid #eee;
+        border: 1px solid rgb(145, 144, 144);
         box-shadow: 0 2px 2px #ccc;
         width:50%;
         padding : 1em;
