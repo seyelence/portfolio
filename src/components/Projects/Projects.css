@@ -2,23 +2,16 @@
     margin-top: 9%;
     text-align: center;
     font-size: 3em;
-}
-
-.desc {
-    width: 40%;
-    margin-left: 35%;
-    font-size: 130%;
-    padding: 2%;
+    
 }
 
 .card {
     border: 1px solid #eee;
     box-shadow: 0 2px 2px #ccc;
-    width:30%;
+    width:20%;
     padding : 4em;
-position: relative; 
-   margin-left:15%;
-   z-index: -1;
+    position: relative; 
+     margin-left:1%;
 }
 
 proj.desc {
@@ -31,6 +24,7 @@ proj.desc {
 
 .wrapper {
 display: flex;
+justify-content: center;
 }
 
 a {
@@ -57,7 +51,7 @@ a:hover {
         box-shadow: 0 2px 2px #ccc;
         width:50%;
         padding : 1em;
-    position: relative; 
+        position: relative; 
        margin-left:15%;
     }
 }
