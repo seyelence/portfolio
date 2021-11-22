@@ -1,10 +1,7 @@
 import React from "react";
 import './Home.css'
 import GitHubIcon from '@material-ui/icons/GitHub'
-<<<<<<< HEAD
-=======
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
->>>>>>> 30f5db77999f1e486feb184b815fddd91d01b61b
+
 
 
 function Home() {
